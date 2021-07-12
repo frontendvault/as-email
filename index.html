@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f6f6f6; color: #777;
+        }
+
+        table {
+            margin: 0;
+        }
+        h3, h4 { color:#777;}
+        .d-block {
+            display: block;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 0;
+            line-height: 24px;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #9e9e9e;
+        }
+
+        h3 {
+            font-size: 28px;
+
+        }
+
+        h4 {
+            font-size: 24px;
+        }
+
+        svg {
+            width: 25px;
+        }
+        h3 svg { width:40px}
+
+        svg path {
+            fill: #454545
+        }
+
+        svg path:hover {
+            fill: #3287a8
+        }
+
+        .bg-dark {
+            background: #454545;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .main {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .no-margin {
+            margin: 0;
+        }
+
+        .bg-light {
+            background: #f1f1f1;
+        }
+
+        .border-top {
+            border-top: 1px solid #ccc
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .big-font {
+            font-size: 42px
+        }
+
+        .mt-1 {
+            margin-top: 10px;
+        }
+
+        .mt-2 {
+            margin-top: 20px;
+        }
+
+        .mb-1 {
+            margin-bottom: 10px;
+        }
+
+        .mb-2 {
+            margin-bottom: 20px;
+        }
+
+        .font-weight-bold {
+            font-weight: 600;
+        }
+
+        .bg-white {
+            background: #fff
+        }
+
+        .card-section {
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 30px;
+            color: #666;
+        }
+
+        .w-100 {
+            width: 100%
+        }
+
+        table tr td {
+            vertical-align: top;
+        }
+
+        .p-2 {
+            padding: 20px
+        }
+
+        .mt-0 {
+            margin-top: 0
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+a { color: #555;}
+a:hover { color: #222;}
+        .pricing {
+            background: #fff;
+            padding: 10px;
+            width: 320px; padding-top: 25px;
+        }
+
+        .pricing p {
+
+            line-height: 16px;
+        }
+
+        .pricing h5 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .pricing tr {
+            margin-bottom: 20px;
+        }
+
+        .success {
+            padding-bottom: 30px;
+            padding-top: 30px;
+            background: #f1f1f1;
+            color: #888;  background:url(food-order.jpg) no-repeat center center; background-size: cover;
+        }
+
+        .success h2 {
+            color: #14a800; font-weight: bolder; margin-top: 10px; margin-bottom: 10px;
+        }
+
+        .btn-round {
+            background: #3287a8;
+            padding: 6px 15px;
+            border-radius: 8px;
+            border: 1px solid #3287a8;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .total tr td { padding: 5px;}
+        .grand-total { font-size: 18px;}
+        .grand-total span { font-size: 22px; color: #333;}
+        .box-white { background:#fff; padding: 15px; border-radius: 6px;} 
+    </style>
+
+
+</head>
+
+<body>
+    <table class="main success text-center">
+        <tr>
+            <td>
+                <h2>Success! Your order has been placed.</h2>
+            </td>
+        </tr> <tr>
+            <td class="text-center">
+                <h3 class="mt-1 mb-1">We have sent your order!</h3>
+                <p class="no-margin">Your Order will be ready for <span class="uppercase">pickup</span></p>
+                <span>Kyle Bagley</span>
+            </td>
+        </tr>
+    </table>
+
+    <table class="main">
+       
+        <tr>
+            <td style="padding-right:40px">
+                <table class="w-100 " style="margin-top: 40px;">
+                    <tr>
+                        <td class="border-top border-bottom p-2">
+                            <table class="w-100">
+                                <tr>
+                                    <td style="width:50%">
+                                        <table class="box-white" style="margin: 0 auto;">
+                                            <tr class="border-top">
+                                                <td>
+                                                    <h3 class="mt-1 mb-2"> <svg
+                                                        enable-background="new 0 0 111 117" id="Layer_1" version="1.1" viewBox="0 0 111 117"
+                                                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g>
+                                                            <path
+                                                                d="M109.469,29.504c-0.77-0.957-1.873-1.504-3.029-1.504H85v12c0,5.514-4.486,10-10,10s-10-4.486-10-10V28H45   v12c0,5.514-4.486,10-10,10s-10-4.486-10-10V28H3.561c-1.157,0-2.26,0.547-3.03,1.504c-0.771,0.957-1.136,2.233-1.004,3.507   l7.195,69.769C6.856,110.646,12.673,117,19.805,117h70.391c7.131,0,12.948-6.354,13.083-14.221l7.195-69.769   C110.605,31.737,110.24,30.461,109.469,29.504z"
+                                                                fill="#231F20" />
+                                                            <path
+                                                                d="M35,44c2.206,0,4-1.794,4-4V18c0-6.177,6.229-10,12-10h10c6.074,0,10,3.925,10,10v22c0,2.206,1.795,4,4,4   s4-1.794,4-4V18C79,7.57,71.43,0,61,0H51C39.972,0,31,8.075,31,18v22C31,42.206,32.794,44,35,44z"
+                                                                fill="#231F20" />
+                                                        </g>
+                                                    </svg> Pickup</h3>
+                                                    <small class="uppercase">Estimated time pickup</small>
+
+                                                    <p class="uppercase big-font mt-2 mb-2"> 0:7:15 pm </p>
+                                                    <small class="mb-2 d-block">07/09/2021 (Today) </small>
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td style="width:50%">
+                                        <table class="box-white" style="margin: 0 auto;">
+                                            <tr class="border-top">
+                                                <td>
+                                                    <h3 class="mt-1 mb-2"><svg style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24"
+                                                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g id="info" />
+                                                        <g id="icons">
+                                                            <g id="user">
+                                                                <ellipse cx="12" cy="8" rx="5" ry="6" />
+                                                                <path
+                                                                    d="M21.8,19.1c-0.9-1.8-2.6-3.3-4.8-4.2c-0.6-0.2-1.3-0.2-1.8,0.1c-1,0.6-2,0.9-3.2,0.9s-2.2-0.3-3.2-0.9    C8.3,14.8,7.6,14.7,7,15c-2.2,0.9-3.9,2.4-4.8,4.2C1.5,20.5,2.6,22,4.1,22h15.8C21.4,22,22.5,20.5,21.8,19.1z" />
+                                                            </g>
+                                                        </g>
+                                                    </svg> Customer</h3>
+                                                    <h4 class="  mt-1 mb-1">Kyle Bagley</h4>
+
+                                                    <p> Benny&Co - Ange-Gardien (Ville) </p>
+                                                    <p> 109 quebec 235 Lorem ipsum dolor lorem </p>
+                                                    <a
+                                                        href="mailto:kylewilsonbagley@gmail.com">kylewilsonbagley@gmail.com</a>
+
+                                                    <br>
+                                                    <p class="mt-2 bg-light font-weight-bold card-section"> Card -
+                                                        <span>*** *** 3453</span>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <table class="bg-white p-2" style="margin-top:40px">
+                                <tr>
+                                    <td>
+                                        <h2 class="mt-1 mb-1">Stay Connected</h2>
+
+                                        <p class="uppercase"></p>
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, modi
+                                            consequuntur
+                                            qui fuga dolores repellat ratione quas quisquam alias eaque. </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="w-100 p-2">
+                                <tr>
+                                    <td>Sign up for text alerts</td>
+                                    <td class="text-right"> <a href="#" class="signup uppercase"> <button
+                                                class="btn-round mb-1">sign up</button> </a> </td>
+                                </tr>
+                                <tr>
+                                    <td>Like us on Facebook and share your ordering experience.</td>
+                                    <td class="text-right"> <a href="#" class="d-block mb-1">
+                                            <svg height="100%" version="1.1" viewBox="0 0 512 512" width="100%"
+                                                xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M512,257.555c0,-141.385 -114.615,-256 -256,-256c-141.385,0 -256,114.615 -256,256c0,127.777 93.616,233.685 216,252.89l0,-178.89l-65,0l0,-74l65,0l0,-56.4c0,-64.16 38.219,-99.6 96.695,-99.6c28.009,0 57.305,5 57.305,5l0,63l-32.281,0c-31.801,0 -41.719,19.733 -41.719,39.978l0,48.022l71,0l-11.35,74l-59.65,0l0,178.89c122.385,-19.205 216,-125.113 216,-252.89Z"
+                                                    style="fill-rule:nonzero;" />
+                                            </svg></a> </td>
+                                </tr>
+                                <tr>
+                                    <td>Follow us on instagram</td>
+                                    <td class="text-right"> <a href="#" class="d-block mb-1"><svg height="100%"
+                                                viewBox="0 0 600 600" width="100%" xml:space="preserve"
+                                                xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g transform="matrix(1.01619,0,0,1.01619,44,43.8384)">
+                                                    <path
+                                                        d="M251.921,0.159C183.503,0.159 174.924,0.449 148.054,1.675C121.24,2.899 102.927,7.157 86.902,13.385C70.336,19.823 56.287,28.437 42.282,42.442C28.277,56.447 19.663,70.496 13.225,87.062C6.997,103.086 2.739,121.399 1.515,148.213C0.289,175.083 0,183.662 0,252.08C0,320.497 0.289,329.076 1.515,355.946C2.739,382.76 6.997,401.073 13.225,417.097C19.663,433.663 28.277,447.712 42.282,461.718C56.287,475.723 70.336,484.337 86.902,490.775C102.927,497.002 121.24,501.261 148.054,502.484C174.924,503.71 183.503,504 251.921,504C320.338,504 328.917,503.71 355.787,502.484C382.601,501.261 400.914,497.002 416.938,490.775C433.504,484.337 447.553,475.723 461.559,461.718C475.564,447.712 484.178,433.663 490.616,417.097C496.843,401.073 501.102,382.76 502.325,355.946C503.551,329.076 503.841,320.497 503.841,252.08C503.841,183.662 503.551,175.083 502.325,148.213C501.102,121.399 496.843,103.086 490.616,87.062C484.178,70.496 475.564,56.447 461.559,42.442C447.553,28.437 433.504,19.823 416.938,13.385C400.914,7.157 382.601,2.899 355.787,1.675C328.917,0.449 320.338,0.159 251.921,0.159ZM251.921,45.551C319.186,45.551 327.154,45.807 353.718,47.019C378.28,48.14 391.619,52.244 400.496,55.693C412.255,60.263 420.647,65.723 429.462,74.538C438.278,83.353 443.737,91.746 448.307,103.504C451.757,112.381 455.861,125.72 456.981,150.282C458.193,176.846 458.45,184.814 458.45,252.08C458.45,319.345 458.193,327.313 456.981,353.877C455.861,378.439 451.757,391.778 448.307,400.655C443.737,412.414 438.278,420.806 429.462,429.621C420.647,438.437 412.255,443.896 400.496,448.466C391.619,451.916 378.28,456.02 353.718,457.14C327.158,458.352 319.191,458.609 251.921,458.609C184.65,458.609 176.684,458.352 150.123,457.14C125.561,456.02 112.222,451.916 103.345,448.466C91.586,443.896 83.194,438.437 74.378,429.621C65.563,420.806 60.103,412.414 55.534,400.655C52.084,391.778 47.98,378.439 46.859,353.877C45.647,327.313 45.391,319.345 45.391,252.08C45.391,184.814 45.647,176.846 46.859,150.282C47.98,125.72 52.084,112.381 55.534,103.504C60.103,91.746 65.563,83.353 74.378,74.538C83.194,65.723 91.586,60.263 103.345,55.693C112.222,52.244 125.561,48.14 150.123,47.019C176.687,45.807 184.655,45.551 251.921,45.551Z"
+                                                        style="fill-rule:nonzero;" />
+                                                    <path
+                                                        d="M251.921,336.053C205.543,336.053 167.947,298.457 167.947,252.08C167.947,205.702 205.543,168.106 251.921,168.106C298.298,168.106 335.894,205.702 335.894,252.08C335.894,298.457 298.298,336.053 251.921,336.053ZM251.921,122.715C180.474,122.715 122.556,180.633 122.556,252.08C122.556,323.526 180.474,381.444 251.921,381.444C323.367,381.444 381.285,323.526 381.285,252.08C381.285,180.633 323.367,122.715 251.921,122.715Z"
+                                                        style="fill:rgb(3,4,4);fill-rule:nonzero;" />
+                                                    <path
+                                                        d="M416.627,117.604C416.627,134.3 403.092,147.834 386.396,147.834C369.701,147.834 356.166,134.3 356.166,117.604C356.166,100.908 369.701,87.374 386.396,87.374C403.092,87.374 416.627,100.908 416.627,117.604Z"
+                                                        style="fill:rgb(3,4,4);fill-rule:nonzero;" />
+                                                </g>
+                                            </svg></a> </td>
+                                </tr>
+                                <tr>
+                                    <td>Tweet@us to share your ordering experience</td>
+                                    <td class="text-right"> <a href="#" class="d-block mb-1"><svg height="100%"
+                                                viewBox="0 0 512 512" width="100%" xml:space="preserve"
+                                                xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path
+                                                    d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm-46.848,391.04c113.536,0 175.616,-94.08 175.616,-175.616c0,-2.688 0,-5.376 -0.128,-7.936c12.032,-8.704 22.528,-19.584 30.848,-32c-11.008,4.864 -22.912,8.192 -35.456,9.728c12.8,-7.68 22.528,-19.712 27.136,-34.176c-11.904,7.04 -25.088,12.16 -39.168,14.976c-11.264,-12.032 -27.264,-19.456 -45.056,-19.456c-34.048,0 -61.696,27.648 -61.696,61.696c0,4.864 0.512,9.6 1.664,14.08c-51.328,-2.56 -96.768,-27.136 -127.232,-64.512c-5.248,9.088 -8.32,19.712 -8.32,30.976c0,21.376 10.88,40.32 27.52,51.328c-10.112,-0.256 -19.584,-3.072 -27.904,-7.68l0,0.768c0,29.952 21.248,54.784 49.536,60.544c-5.12,1.408 -10.624,2.176 -16.256,2.176c-3.968,0 -7.808,-0.384 -11.648,-1.152c7.808,24.576 30.592,42.368 57.6,42.88c-21.12,16.512 -47.744,26.368 -76.672,26.368c-4.992,0 -9.856,-0.256 -14.72,-0.896c27.008,17.664 59.52,27.904 94.336,27.904Z"
+                                                    id="Dark_Blue" />
+                                            </svg></a> </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4 class="mb-1" style="margin-top: 30px;" >Review us on</h4>
+
+                                        <p class="mt-1 mb-2"><svg enable-background="new 0 0 32 32" id="Glyph" version="1.1"
+                                                viewBox="0 0 32 32" xml:space="preserve"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path
+                                                    d="M29.895,12.52c-0.235-0.704-0.829-1.209-1.549-1.319l-7.309-1.095l-3.29-6.984C17.42,2.43,16.751,2,16,2  s-1.42,0.43-1.747,1.122l-3.242,6.959l-7.357,1.12c-0.72,0.11-1.313,0.615-1.549,1.319c-0.241,0.723-0.063,1.507,0.465,2.046  l5.321,5.446l-1.257,7.676c-0.125,0.767,0.185,1.518,0.811,1.959c0.602,0.427,1.376,0.469,2.02,0.114l6.489-3.624l6.581,3.624  c0.646,0.355,1.418,0.311,2.02-0.114c0.626-0.441,0.937-1.192,0.811-1.959l-1.259-7.686l5.323-5.436  C29.958,14.027,30.136,13.243,29.895,12.52z"
+                                                    id="XMLID_328_" />
+                                            </svg>
+                                            <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1"
+                                                viewBox="0 0 32 32" xml:space="preserve"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path
+                                                    d="M29.895,12.52c-0.235-0.704-0.829-1.209-1.549-1.319l-7.309-1.095l-3.29-6.984C17.42,2.43,16.751,2,16,2  s-1.42,0.43-1.747,1.122l-3.242,6.959l-7.357,1.12c-0.72,0.11-1.313,0.615-1.549,1.319c-0.241,0.723-0.063,1.507,0.465,2.046  l5.321,5.446l-1.257,7.676c-0.125,0.767,0.185,1.518,0.811,1.959c0.602,0.427,1.376,0.469,2.02,0.114l6.489-3.624l6.581,3.624  c0.646,0.355,1.418,0.311,2.02-0.114c0.626-0.441,0.937-1.192,0.811-1.959l-1.259-7.686l5.323-5.436  C29.958,14.027,30.136,13.243,29.895,12.52z"
+                                                    id="XMLID_328_" />
+                                            </svg>
+                                            <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1"
+                                                viewBox="0 0 32 32" xml:space="preserve"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path
+                                                    d="M29.895,12.52c-0.235-0.704-0.829-1.209-1.549-1.319l-7.309-1.095l-3.29-6.984C17.42,2.43,16.751,2,16,2  s-1.42,0.43-1.747,1.122l-3.242,6.959l-7.357,1.12c-0.72,0.11-1.313,0.615-1.549,1.319c-0.241,0.723-0.063,1.507,0.465,2.046  l5.321,5.446l-1.257,7.676c-0.125,0.767,0.185,1.518,0.811,1.959c0.602,0.427,1.376,0.469,2.02,0.114l6.489-3.624l6.581,3.624  c0.646,0.355,1.418,0.311,2.02-0.114c0.626-0.441,0.937-1.192,0.811-1.959l-1.259-7.686l5.323-5.436  C29.958,14.027,30.136,13.243,29.895,12.52z"
+                                                    id="XMLID_328_" />
+                                            </svg>
+                                            <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1"
+                                                viewBox="0 0 32 32" xml:space="preserve"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path
+                                                    d="M29.895,12.52c-0.235-0.704-0.829-1.209-1.549-1.319l-7.309-1.095l-3.29-6.984C17.42,2.43,16.751,2,16,2  s-1.42,0.43-1.747,1.122l-3.242,6.959l-7.357,1.12c-0.72,0.11-1.313,0.615-1.549,1.319c-0.241,0.723-0.063,1.507,0.465,2.046  l5.321,5.446l-1.257,7.676c-0.125,0.767,0.185,1.518,0.811,1.959c0.602,0.427,1.376,0.469,2.02,0.114l6.489-3.624l6.581,3.624  c0.646,0.355,1.418,0.311,2.02-0.114c0.626-0.441,0.937-1.192,0.811-1.959l-1.259-7.686l5.323-5.436  C29.958,14.027,30.136,13.243,29.895,12.52z"
+                                                    id="XMLID_328_" />
+                                            </svg>
+                                            <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1"
+                                                viewBox="0 0 32 32" xml:space="preserve"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path
+                                                    d="M29.895,12.52c-0.235-0.704-0.829-1.209-1.549-1.319l-7.309-1.095l-3.29-6.984C17.42,2.43,16.751,2,16,2  s-1.42,0.43-1.747,1.122l-3.242,6.959l-7.357,1.12c-0.72,0.11-1.313,0.615-1.549,1.319c-0.241,0.723-0.063,1.507,0.465,2.046  l5.321,5.446l-1.257,7.676c-0.125,0.767,0.185,1.518,0.811,1.959c0.602,0.427,1.376,0.469,2.02,0.114l6.489-3.624l6.581,3.624  c0.646,0.355,1.418,0.311,2.02-0.114c0.626-0.441,0.937-1.192,0.811-1.959l-1.259-7.686l5.323-5.436  C29.958,14.027,30.136,13.243,29.895,12.52z"
+                                                    id="XMLID_328_" />
+                                            </svg>
+                                        </p>
+                                        <img src="google.png" alt="">
+                                        <img src="yelp.png" alt="">
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="w-100 " style="margin-top: 40px;" >
+                    <tr>
+                        <td>
+                            <h3 class="font-weight-bold mt-0">Order Summary</h3>
+                        </td>
+                        <td>
+                            <p class="text-light">ID: <span>7598790</span></p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="pricing w-100">
+
+                    <tr>
+                        <td>
+                            <table class="mb-2">
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <h5 class="uppercase font-weight-bold mt-0 mb-2"> Large ("14") Thin Pizza</h5>
+                                        <p><small class="uppercase"><span class="font-weight-bold ">Toppings</span>
+                                                Nions, Cheese</small></p>
+                                        <p><small class="uppercase"><span class="font-weight-bold ">Size</span>
+                                                Large</small></p>
+                                        <p><small class="uppercase"><span class="font-weight-bold ">Add ONS</span> Extra
+                                                Cheese</small></p>
+
+                                    </td>
+                                    <td class="price">$19.38 </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="mb-2">
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <h5 class="uppercase font-weight-bold mt-0 mb-2"> Large ("14") Thin Pizza</h5>
+                                        <p><small class="uppercase"><span class="font-weight-bold ">Toppings</span>
+                                                Nions, Cheese</small></p>
+                                        <p><small class="uppercase"><span class="font-weight-bold ">Size</span>
+                                                Large</small></p>
+                                        <p><small class="uppercase"><span class="font-weight-bold ">Add ONS</span> Extra
+                                                Cheese</small></p>
+
+                                    </td>
+                                    <td class="price">$19.38 </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="mb-2">
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <h5 class="uppercase font-weight-bold mt-0 mb-2"> Large ("14") Thin Pizza</h5>
+                                        <p><small class="uppercase"><span class="font-weight-bold ">Toppings</span>
+                                                Nions, Cheese</small></p>
+                                        <p><small class="uppercase"><span class="font-weight-bold ">Size</span>
+                                                Large</small></p>
+                                        <p><small class="uppercase"><span class="font-weight-bold ">Add ONS</span> Extra
+                                                Cheese</small></p>
+
+                                    </td>
+                                    <td class="price">$19.38 </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="w-100 total">
+                                <tr>
+                                    <td class="text-right" style="width: 65%;"> Subtotal</td>
+                                    <td class="text-right">$24.98</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right"> Tax</td>
+                                    <td class="text-right">$4.98</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right"> Coupon</td>
+                                    <td class="text-right">$1.60</td>
+                                </tr>
+                                <tr class="grand-total font-weight-bold">
+                                    <td class="text-right"> Total</td>
+                                    <td class="text-right"><span>$106.00</span></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+
+    </table>
+
+
+
+
+</body>
+
+</html>
