@@ -318,6 +318,11 @@
     .pb-2 {
       padding-bottom: 20px!important;
     }
+    .show-mobile { display:none}
+
+    @media only screen and (max-width: 600px) {
+      .show-mobile { display:block}
+    }
   </style>
 </head>
 
@@ -413,7 +418,7 @@
             </td>
           </tr>
           <tr>
-            <td> <table class="pricing w-100 table-bg" style="margin-top: 43px">
+            <td> <table class="pricing w-100 table-bg show-mobile" style="margin-top: 43px">
               <tr>
                 <td class="border-bottom">
                   <h3 class="font-weight-bold mt-0 mb-0">Order Summary</h3>
