@@ -321,9 +321,13 @@
     .show-mobile { display:none}
     .pr-2 { padding-right: 20px;}
 
-    @media only screen and (max-width: 600px) {
-      .show-mobile { display:block!important}
-      .pricing { display:none}
+    @media only screen and (max-width: 1024px) {
+      .show-mobile { display:table!important}
+      .pricing { display:none; margin-top: 20px!important;}
+      .pr-2 { padding-right:0}
+      .success h2 { font-size: 18px;}
+      .success { padding-top: 10px; padding-bottom: 10px;}
+      .w-15-mob { width: 15px;}
     }
   </style>
 </head>
@@ -407,7 +411,7 @@
                   <td colspan="2" class="border-top">
                     <table>
                       <tr>
-                        <td><img src="ic_credit-card.svg" alt="" /></td>
+                        <td><img src="ic_credit-card.svg" class="w-15-mob" alt="" /></td>
                         <td style="padding-left: 20px">
                           <h5 class="mt-0 mb-1">Card - Visa</h5>
                           <p>*** *** 3453</p>
