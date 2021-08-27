@@ -258,6 +258,7 @@
         font-weight: 500;
         cursor: pointer;
         line-height: 20px;
+        width: 90px;
       }
 
       .total tr td {
@@ -351,6 +352,10 @@
         .success {
           padding-top: 10px;
           padding-bottom: 10px;
+        }
+
+        .col-width-responsive {
+          width: 100%;
         }
       }
       @media only screen and (max-width: 767px) {
@@ -598,7 +603,10 @@
             </tr>
             <tr>
               <td class="pr-2">
-                <table class="bg-white p-2 table-bg" style="margin-top: 20px">
+                <table
+                  class="bg-white p-2 table-bg w-100"
+                  style="margin-top: 20px"
+                >
                   <tr>
                     <td colspan="2">
                       <h3 class="mt-0 mb-1" style="font-size: 22px">
